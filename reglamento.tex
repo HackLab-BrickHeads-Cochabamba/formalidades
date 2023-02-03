@@ -1,25 +1,34 @@
 \documentclass[12pt, letterpaper]{article}
-\usepackage{graphicx}
+\usepackage{draftwatermark}
 \usepackage[spanish]{babel}
+\usepackage{graphicx}
 \usepackage{parskip}
 \usepackage{enumitem}
-
+\usepackage{transparent}
 
 % Document Settings
 \setlength{\parindent}{0cm}
 \setlength{\parskip}{4mm}
 \setlist{nosep}
 \renewcommand{\familydefault}{\sfdefault}
+\SetWatermarkText{
+    {\transparent{0.05}\includegraphics[width=16cm]{./images/square_dark.png}}    
+}
+% \SetWatermarkScale{5}
+\SetWatermarkColor[gray]{0.1}
+\SetWatermarkAngle{0}
 
 % Metadata
 \title{Reglamento Interno ``HackLab BrickHeads''}
 \author{Versión I}
 \date{Febrero 2023}
 
+
 % Document
 \begin{document}
     \maketitle
-    \hspace{1cm}
+    % \hspace{1cm}
+
     \begin{center}
         HackLab BrickHeads es un espacio Hacker de conocimiento abierto, 
         experimentación y aprendizaje colectivo
